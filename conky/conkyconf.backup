@@ -1,0 +1,78 @@
+conky.config = {
+    alignment = 'top_right',
+    gap_x = 20,
+    gap_y = 50,
+    update_interval = 1.0,
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_transparent = true,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    double_buffer = true,
+    minimum_width = 300,
+    maximum_width = 400,
+    default_color = '#f8f8f2',  -- Dracula foreground color
+    font = 'DejaVu Sans Mono:size=10',
+    use_xft = true,
+};
+
+conky.text = [[
+${color #bd93f9}BSPWM Shortcuts
+${color #6272a4}====================
+${color #ff79c6}Window Management:
+${color}Super + Return ${alignr}Open Terminal
+Super + d ${alignr}App Launcher (Rofi)
+Super + Ctrl + d ${alignr}Window Switcher
+Super + Shift + d ${alignr}Show SSH Sessions
+Super + Shift + e ${alignr}Power Menu
+Super + Escape ${alignr}Reload sxhkd
+
+${color #ff79c6}Resize/Move Windows:
+${color}Super + Alt + {h,j,k,l} ${alignr}Expand Window
+Super + Shift + Arrow ${alignr}Move Window
+Super + F ${alignr}Fullscreen Mode
+Super + Shift + M ${alignr}Toggle Monocle Mode
+Super + {Left, Down, Up, Right} ${alignr}Move Floating Window
+
+${color #ff79c6}Focus/Swap Nodes:
+${color}Super + Tab ${alignr}Focus Last Desktop
+Super + Shift + {h,j,k,l} ${alignr}Move Window
+Super + Alt + r ${alignr}Restart BSPWM
+Super + {grave} ${alignr}Focus Last Node
+
+#${color #50fa7b}Volume Control:
+#F6 ${alignr}Decrease Volume
+#F7 ${alignr}Toggle Mute
+#F8 ${alignr}Increase Volume
+
+${color #bd93f9}Utility Shortcuts
+${color #6272a4}====================
+${color #ffb86c}Screenshot:
+${color}Print ${alignr}Full Monitor Screenshot
+Super + Print ${alignr}Screenshot Menu
+
+${color #ffb86c}Launch Applications:
+${color}Super + w ${alignr}Launch Firefox
+Super + n ${alignr}Launch Thunar
+F6 ${alignr}Launch Stremio
+F7 ${alignr}Launch Telegram
+
+${color #bd93f9}Neovim Shortcuts
+${color #6272a4}====================
+${color #ffb86c}File Operations:
+${color}Ctrl + S ${alignr}Save File
+Ctrl + O ${alignr}Open File
+
+${color #ffb86c}Navigation:
+${color}Ctrl + J ${alignr}Move Down
+Ctrl + K ${alignr}Move Up
+Ctrl + H ${alignr}Move Left
+Ctrl + L ${alignr}Move Right
+
+${color #ffb86c}Editing:
+${color}dd ${alignr}Delete Current Line
+yy ${alignr}Yank (Copy) Current Line
+p ${alignr}Paste Below
+u ${alignr}Undo Last Action
+Ctrl + R ${alignr}Redo
+]];
+
